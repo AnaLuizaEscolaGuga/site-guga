@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inscrição - Torneio Interno | Escola Guga LIC</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #08384e; /* fundo azul */
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      color: #08384e;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(131, 131, 131, 0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #08384e;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #08384e;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #aad4e0;
+      color: #08384e;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #e34114;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #c3320f;
+    }
+
+    .alert {
+      background: #fff1e8;
+      color: #e34114;
+      border: 1px solid #f9c7b6;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .pix-box {
+      background: #e6f7fb;
+      border: 1px solid #08384e;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      color: #08384e;
+    }
+
+    .info-box {
+      background-color: #f2f9fc;
+      border-left: 5px solid #08384e;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Inscrição – Torneio Interno</h1>
+    <h2>Festival de Tênis - Escola Guga LIC</h2>
+
+    <div class="alert">
+      <strong>Atenção:</strong> Esta inscrição é exclusiva para o <strong>Torneio Interno</strong> do festival.<br>
+      A participação nos <strong>aulões e clínicas</strong> é gratuita e não requer inscrição – basta comparecer no horário!
+    </div>
+
+    <p><strong>Período de inscrição:</strong> 14 a 22 de julho de 2025</p>
+    <p><strong>Valor:</strong> R$30,00 (via Pix)</p>
+
+    <div class="pix-box">
+      <p><strong>Chave Pix (CNPJ):</strong><br />
+      32.529.443/0001-60</p>
+    </div>
+
+    <div class="info-box">
+      <p><strong>📲 Envie o comprovante de pagamento pelo WhatsApp:</strong><br>
+      <a href="https://wa.me/5548991827491" target="_blank">(48) 99182-7491</a></p>
+    </div>
+
+    <form action="https://formspree.io/f/xyzpgajy" method="POST">
+      <label for="nomeAluno">Nome do Aluno</label>
+      <input type="text" id="nomeAluno" name="Nome do Aluno" required>
+
+      <label for="idade">Idade</label>
+      <input type="number" id="idade" name="Idade" min="4" required>
+
+      <label for="turma">Turma / Horário de Aula</label>
+      <input type="text" id="turma" name="Turma" required>
+
+      <label for="responsavel">Nome do Responsável</label>
+      <input type="text" id="responsavel" name="Responsável" required>
+
+      <label for="telefone">Telefone para contato (WhatsApp)</label>
+      <input type="tel" id="telefone" name="Telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+      <button type="submit">Enviar Inscrição</button>
+    </form>
+  </div>
+</body>
+</html>
